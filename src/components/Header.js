@@ -1,5 +1,6 @@
 import React from "react";
-import {}
+import { BiGlobe } from "react-icons/bi";
+import { RiUser3Fill, RiUserAddFill } from "react-icons/ri";
 
 const Header = () => {
   return (
@@ -11,10 +12,28 @@ const Header = () => {
             alt="getir"
           />
         </a>
-        <nav className="flex gap-x-8 text-sm font-semibold">
-          <a href="#" className="text-white transition-all text-opacity-75 hover:text-opacity-100">Türkçe (TR)</a>
-          <a href="#" className="text-white transition-all text-opacity-75 hover:text-opacity-100">Giriş Yap</a>
-          <a href="#" className="text-white transition-all text-opacity-75 hover:text-opacity-100">Kayıt Ol</a>
+        <nav className="hidden md:flex gap-x-8 text-sm font-semibold">
+          <a
+            href="#"
+            className="flex items-center gap-x-2 text-white transition-all text-opacity-75 hover:text-opacity-100"
+          >
+            <BiGlobe size={20} />
+            Türkçe (TR)
+          </a>
+          <a
+            href="#"
+            className="flex items-center gap-x-2 text-white transition-all text-opacity-75 hover:text-opacity-100"
+          >
+            <RiUser3Fill size={20} />
+            Giriş Yap
+          </a>
+          <a
+            href="#"
+            className="flex items-center gap-x-2 text-white transition-all text-opacity-75 hover:text-opacity-100"
+          >
+            <RiUserAddFill size={20} />
+            Kayıt Ol
+          </a>
         </nav>
       </div>
     </div>
